@@ -1,2 +1,4 @@
-# ansible_playbooks
-ansible playbooks collection
+ansible-playbooks
+=================
+
+A collection of basic playbooks designed to aid in testing ansible functionality.
