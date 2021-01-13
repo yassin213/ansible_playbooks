@@ -1,5 +1,5 @@
 ---
-- hosts: apache
+- hosts: all
 
   tasks:
     - name: install apache2
