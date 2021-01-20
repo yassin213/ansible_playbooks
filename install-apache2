@@ -1,0 +1,9 @@
+--- 
+- 
+  become: true
+  hosts: all
+  remote_user: azenasni
+  tasks: 
+    - 
+      name: "install apache2"
+      yum: "name=httpd state=present"
