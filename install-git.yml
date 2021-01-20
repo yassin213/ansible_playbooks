@@ -8,7 +8,7 @@
 - 
       name: "7. Uninstall HTTPD/Apache"
       tags: uninstall_apache
-      yum:
+      
         name: httpd
         autoremove: yes
         state: absent
