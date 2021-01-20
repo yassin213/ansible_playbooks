@@ -1,11 +1,9 @@
 --- 
 - 
+  become: true
   hosts: all
-  tasks: ~
-- 
-  name: "7. Uninstall HTTPD/Apache"
-  tags: uninstall_apache
-  yum: 
-    autoremove: true
-    name: httpd
-    state: absent
+  remote_user: root
+  tasks: 
+    - 
+      name: "remove apache"
+      yum: "name=httpd state=absent"
