@@ -1,9 +1,8 @@
 --- 
 - 
-  become: true
-  hosts: all
-  sudo: True
-  remote_user: azenasni
+  become_user: root
+  gather_facts: true
+  hosts: webserver
   tasks: 
     - 
       name: "remove git"
