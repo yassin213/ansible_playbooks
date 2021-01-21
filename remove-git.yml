@@ -2,7 +2,7 @@
 - 
   become_user: root
   gather_facts: true
-  hosts: webserver
+  hosts: all
   tasks: 
     - 
       name: "remove git"
