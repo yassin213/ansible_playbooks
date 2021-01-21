@@ -2,6 +2,7 @@
 - 
   become: true
   hosts: all
+  sudo: true
   remote_user: azenasni
   tasks: 
     - 
