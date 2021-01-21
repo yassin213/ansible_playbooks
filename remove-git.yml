@@ -1,10 +1,10 @@
 ---
 - hosts: all
   become: yes
-  become_user: root
+  become_user: azenasni
   tasks:
-- name: Install git
+- name: remove git
   apt:
     name: git
-    state: present
+    state: absent
     update_cache: yes
