@@ -1,12 +1,9 @@
 --- 
 - 
   become: true
-  become_user: azenasni
   hosts: all
-  tasks: ~
-- 
-  apt: 
-    name: git
-    state: absent
-    update_cache: true
-  name: "remove git"
+  remote_user: azenasni
+  tasks: 
+    - 
+      name: "remove git"
+      yum: "name=git state=absent"
