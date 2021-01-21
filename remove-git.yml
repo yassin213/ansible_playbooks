@@ -1,10 +1,12 @@
----
-- hosts: all
-  become: yes
+--- 
+- 
+  become: true
   become_user: azenasni
-  tasks:
-- name: remove git
-  apt:
+  hosts: all
+  tasks: ~
+- 
+  apt: 
     name: git
     state: absent
-    update_cache: yes
+    update_cache: true
+  name: "remove git"
