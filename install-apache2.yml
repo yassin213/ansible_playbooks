@@ -1,7 +1,9 @@
----
-become_user: root
+--- 
+- 
+  become_user: root
   gather_facts: true
   hosts: all
-  tasks:
-    - name: install apache2
-      apt: name=apache2 update_cache=yes state=latest
+  tasks: 
+    - 
+      name: "install apche 2"
+      yum: "name=apache2 state=present"
