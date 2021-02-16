@@ -5,7 +5,7 @@
   hosts: all
   tasks: 
     - 
-      name: "check os release"
+      name: check os release
     - 
       debug: 
         msg: 
